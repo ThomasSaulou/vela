@@ -436,7 +436,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-weight: 400;
 }
 
-.col-vela { background: rgba(247,234,222,0.5); }
+.col-vela { background: var(--c-beige); }
+.comparison-table td.check { background: rgba(247,234,222,0.5); }
 
 .comparison-table td img {
   width: 16px;
