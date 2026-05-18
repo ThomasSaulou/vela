@@ -136,6 +136,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   left: 80px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
   max-width: 860px;
 }
