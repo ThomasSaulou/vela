@@ -43,6 +43,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-weight: 500;
   font-size: 14px;
   white-space: nowrap;
+  width: fit-content;
 }
 .pill-beige  { background: var(--c-beige); color: var(--c-black); }
 .pill-white  { background: var(--c-bg); color: var(--c-black); }
@@ -469,6 +470,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .ritual-content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   gap: 24px;
   padding: 56px;
