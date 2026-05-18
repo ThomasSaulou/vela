@@ -143,9 +143,19 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   max-width: 860px;
 }
 
+.hero-eyebrow {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--c-white);
+  letter-spacing: -0.01em;
+  opacity: 0.9;
+}
+
 .hero-headline {
   font-family: var(--f-serif);
-  font-size: clamp(56px, 6vw, 96px);
+  font-size: clamp(48px, 6vw, 96px);
   font-weight: 400;
   line-height: 1.02;
   letter-spacing: -0.04em;
@@ -155,6 +165,20 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-style: italic;
   color: var(--c-bg);
 }
+
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  background: var(--c-white);
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--c-black);
+  transition: opacity 0.2s;
+}
+.btn-hero:hover { opacity: 0.85; }
 
 /* =============================================
    PRODUCT SECTION
