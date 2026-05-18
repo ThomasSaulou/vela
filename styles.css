@@ -336,7 +336,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 64px;
+  gap: 96px;
   justify-content: center;
 }
 
