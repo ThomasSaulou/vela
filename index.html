@@ -7,18 +7,23 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    Free carbon-neutral shipping over €80 · Lifetime warranty
+  </div>
 
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-left">
-      <a href="#">Menu</a>
+      <a href="#">Story</a>
       <a href="#">Products</a>
-      <a href="#">Instagram</a>
+      <a href="#">Compare</a>
     </div>
-    <a href="#" class="nav-logo">vela.</a>
+    <a href="#" class="nav-logo">VELA.</a>
     <div class="nav-right">
       <a href="#">Account</a>
       <a href="#">Bag (0)</a>
@@ -27,15 +32,13 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-img-wrap">
-      <img
-        src="assets/Section Marketing.png"
-        alt="Woman holding a Vela shaker"
-        class="hero-img"
-      />
-    </div>
+    <img
+      src="https://www.figma.com/api/mcp/asset/7f3eae9d-fb9e-47d5-9e69-f1685bf6b59f"
+      alt="Vela hero"
+      class="hero-img"
+    />
     <div class="hero-content">
-      <p class="hero-eyebrow">The Original Vela Shaker</p>
+      <div class="pill pill-beige">The world's first plastic-free shaker</div>
       <h1 class="hero-headline">
         Shake the future,<br />
         <em>not the planet.</em>
@@ -43,89 +46,91 @@
     </div>
   </section>
 
-  <!-- PRODUCT INTRO -->
-  <section class="product-intro">
-    <div class="product-intro-inner">
-      <p class="section-label">The Original</p>
+  <!-- PRODUCT SECTION -->
+  <section class="product-section">
+    <div class="product-header">
+      <div class="pill pill-beige">The Vela Original</div>
       <h2 class="product-headline">
         Engineered to be<br />
-        the <em>last shaker</em> you'll ever buy.
+        the <em class="accent">last shaker</em> you'll ever<br />
+        buy.
       </h2>
     </div>
-    <div class="product-detail">
-      <div class="product-stats">
-        <div class="product-info">
-          <h3>The Vela Original</h3>
-          <p class="product-desc">
-            Zero microplastics. Zero compromise. Engineered<br />
-            from premium stainless steel with a leak-proof seal<br />
-            that lasts a lifetime.
-          </p>
-          <div class="stats-row">
-            <div class="stat">
-              <span class="stat-value">20 fl</span>
-              <span class="stat-label">oz capacity</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">2lb</span>
-              <span class="stat-label">built to last</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">1&nbsp;life</span>
-              <span class="stat-label">time warranty</span>
-            </div>
+    <div class="product-body">
+      <div class="product-info">
+        <div class="product-name-row">
+          <span class="product-name">The Vela Orignal</span>
+          <div class="pill pill-beige pill-sm">★ 4.9 / 2,341 reviews</div>
+        </div>
+        <p class="product-desc">
+          Three honest materials. Zero microplastics. Independently
+          lab-tested at 90°C — because what you drink shouldn't
+          include what holds it.
+        </p>
+        <div class="product-stats">
+          <div class="stat">
+            <span class="stat-value">316L</span>
+            <span class="stat-label">STEEL</span>
           </div>
-          <div class="product-cta-row">
-            <a href="#" class="btn btn-dark">Shop Now</a>
-            <a href="#" class="btn btn-outline">View Details</a>
+          <div class="stat">
+            <span class="stat-value">25y</span>
+            <span class="stat-label">LIFESPAN</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0g</span>
+            <span class="stat-label">PLASTIC</span>
           </div>
         </div>
-        <div class="product-image-wrap">
-          <div class="product-image-placeholder">
-            <img
-              src="assets/ChatGPT Image Apr 30, 2026, 03_59_16 PM 1.png"
-              alt="Vela Original Shaker"
-            />
-          </div>
-          <div class="product-badges">
-            <div class="badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
-              <span>Dishwasher safe</span>
-            </div>
-            <div class="badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-              <span>Plastic-free</span>
-            </div>
-            <div class="badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12l8-8 8 8M6 10v8a2 2 0 002 2h8a2 2 0 002-2v-8"/></svg>
-              <span>Lifetime warranty</span>
-            </div>
-          </div>
+        <div class="product-cta-row">
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+      </div>
+      <div class="product-image">
+        <img
+          src="https://www.figma.com/api/mcp/asset/0f71a087-f390-4700-bf29-a269869f76f4"
+          alt="Vela Original Shaker"
+        />
+      </div>
+      <div class="product-badges">
+        <div class="feature-badge">
+          <img src="https://www.figma.com/api/mcp/asset/0119c567-1b1a-43b5-9ac4-f7d529d8cef6" alt="Plastic-free" />
+          <span>Plastic-free</span>
+        </div>
+        <div class="feature-badge">
+          <img src="https://www.figma.com/api/mcp/asset/c7d279bc-6984-4e62-b7a1-f1ccb084605b" alt="Durable" />
+          <span>Durable</span>
+        </div>
+        <div class="feature-badge">
+          <img src="https://www.figma.com/api/mcp/asset/6daeb888-ddef-4866-b6d7-e363140c4294" alt="BPA-free" />
+          <span>BPA-free</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY SECTION -->
-  <section class="why-section">
-    <div class="why-inner">
-      <p class="section-label">The Promise</p>
-      <h2 class="why-headline">
-        "Common" plastic shakers leach <em class="accent-green">microparticles</em><br />
+  <!-- PROBLEM SECTION -->
+  <section class="problem-section">
+    <div class="problem-inner">
+      <div class="pill pill-white">The Problem</div>
+      <h2 class="problem-headline">
+        "Common" plastic shakers leach <em class="accent">microparticles</em><br />
         into every workout.
       </h2>
-      <div class="why-grid">
-        <div class="why-card">
-          <h4>No Solution</h4>
-          <p>Traditional plastic shakers shed thousands of microparticles per use — ending up in your body.</p>
+      <div class="problem-grid">
+        <div class="problem-item">
+          <span class="problem-num">01</span>
+          <h4>Microplastics</h4>
+          <p>Plastic bottles release thousands of micro-particles per shake into your drink.</p>
         </div>
-        <div class="why-card">
-          <h4>A genuine choice</h4>
-          <p>Switch once. Our stainless steel bottle never degrades, never leeches, never needs replacing.</p>
+        <div class="problem-item">
+          <span class="problem-num">02</span>
+          <h4>Trapped odours</h4>
+          <p>Porous plastic walls absorb protein residue — the smell never quite leaves.</p>
         </div>
-        <div class="why-card">
-          <h4>Zero Waste</h4>
-          <p>One bottle for life means fewer bottles in oceans. The most sustainable shaker is the one you keep.</p>
+        <div class="problem-item">
+          <span class="problem-num">03</span>
+          <h4>Short lifespan</h4>
+          <p>Most plastic shakers are landfill within 18 months. Vela is built for 25 years.</p>
         </div>
       </div>
     </div>
@@ -134,52 +139,63 @@
   <!-- COMPARISON TABLE -->
   <section class="comparison-section">
     <div class="comparison-inner">
-      <p class="section-label">The Difference</p>
-      <h2 class="comparison-headline">Vela vs. <em>the other shakers.</em></h2>
-      <div class="table-wrap">
+      <div class="pill pill-beige">The Difference</div>
+      <h2 class="comparison-headline">
+        Vela vs. <em class="muted">the other shakers.</em>
+      </h2>
+      <div class="comparison-table-wrap">
         <table class="comparison-table">
           <thead>
             <tr>
-              <th></th>
+              <th class="col-feature"></th>
               <th class="col-vela">Vela</th>
-              <th class="col-others">The others</th>
+              <th class="col-others">Plastic shakers</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Zero microplastics</td>
-              <td class="check">✓</td>
-              <td class="cross">—</td>
+              <td class="check">
+                <img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" />
+              </td>
+              <td class="cross">
+                <img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" />
+              </td>
             </tr>
             <tr>
-              <td>Lifetime guarantee</td>
-              <td class="check">✓</td>
-              <td class="cross">—</td>
+              <td>BPA-free, forever</td>
+              <td class="check"><img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" /></td>
+              <td class="cross"><img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" /></td>
             </tr>
             <tr>
-              <td>Stainless steel &amp; BPA-free</td>
-              <td class="check">✓</td>
-              <td class="cross">—</td>
+              <td>Surgical-grade 316L steel</td>
+              <td class="check"><img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" /></td>
+              <td class="cross"><img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" /></td>
             </tr>
             <tr>
-              <td>Dishwasher safe</td>
-              <td class="check">✓</td>
-              <td class="cross">—</td>
+              <td>Natural cork seal</td>
+              <td class="check"><img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" /></td>
+              <td class="cross"><img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" /></td>
             </tr>
             <tr>
-              <td>Odour &amp; stain resistant</td>
-              <td class="check">✓</td>
-              <td class="cross">—</td>
+              <td>Lifetime warranty</td>
+              <td class="check"><img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" /></td>
+              <td class="cross"><img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" /></td>
             </tr>
             <tr>
-              <td>Made to last a lifetime</td>
-              <td class="check">✓</td>
-              <td class="cross">—</td>
+              <td>Carbon-neutral shipping</td>
+              <td class="check"><img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" /></td>
+              <td class="cross"><img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" /></td>
             </tr>
             <tr>
-              <td>Compostable shipping</td>
-              <td class="check">✓</td>
-              <td class="cross">—</td>
+              <td>Made in Europe</td>
+              <td class="check"><img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" /></td>
+              <td class="cross"><img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" /></td>
+            </tr>
+            <tr>
+              <td>Recyclable in one stream</td>
+              <td class="check"><img src="https://www.figma.com/api/mcp/asset/c0518d75-effe-40ad-ac1a-6aff06850ed6" alt="Yes" /></td>
+              <td class="cross"><img src="https://www.figma.com/api/mcp/asset/b892c809-3517-4210-b106-ef5857dae962" alt="No" /></td>
             </tr>
           </tbody>
         </table>
@@ -187,125 +203,95 @@
     </div>
   </section>
 
-  <!-- RECIPES BANNER -->
-  <section class="recipes-section">
-    <div class="recipes-img-wrap">
+  <!-- RECIPES / RITUAL SECTION -->
+  <section class="ritual-section">
+    <div class="ritual-img-wrap">
       <img
-        src="assets/Pouring water into the shaker.png"
-        alt="Person preparing a shake"
-        class="recipes-img"
+        src="https://www.figma.com/api/mcp/asset/1c5a0ca2-9cfe-476c-90b3-f9de1c5050d2"
+        alt="Pouring water into the shaker"
+        class="ritual-img"
       />
     </div>
-    <div class="recipes-content">
-      <p class="section-label light">The Feed</p>
-      <h2 class="recipes-headline">Explore our recipes</h2>
-      <p class="recipes-sub">
-        Fuel up with the shakes that athletes love. Every recipe is built around<br />
-        real food and designed to taste great in your Vela.
+    <div class="ritual-content">
+      <div class="pill pill-overlay">The Ritual</div>
+      <h2 class="ritual-headline">Explore our recipes</h2>
+      <p class="ritual-sub">
+        Cool steel in your palm. The soft pop of cork. A slow pour. We
+        designed every gesture — because how you start your day is
+        how you spend it.
       </p>
-      <a href="#" class="btn btn-light">Browse Recipes</a>
+      <span class="coming-soon-badge coming-soon-light">Coming Soon</span>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials-section">
-    <div class="testimonials-inner">
-      <p class="section-label centered">4.9 / 5 · 2,643 reviews</p>
-      <h2 class="testimonials-headline">
-        Loved by athletes,<br />
-        <em>sworn by minimalists.</em>
+  <!-- NEWSLETTER / WAITLIST -->
+  <section class="waitlist-section">
+    <div class="waitlist-inner">
+      <div class="pill pill-beige">The Dispatch</div>
+      <h2 class="waitlist-headline">
+        Launching soon from <em class="accent">Vela.</em>
       </h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"I haven't touched a plastic shaker since I received mine. The quality is unreal — it feels like a proper piece of kit, not a gym gimmick."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar"></div>
-            <div>
-              <strong>Jessica M.</strong>
-              <span>Verified buyer</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Can't stand sending waste to a landfill. This is the only shaker I'll use. Zero smell, zero stains, and I've dropped it more times than I care to admit."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar"></div>
-            <div>
-              <strong>Daniel R.</strong>
-              <span>Verified buyer</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Gifted one to my recovery man — now he's ordered three more for the whole team. It genuinely pays for itself within a year."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar"></div>
-            <div>
-              <strong>Sofia L.</strong>
-              <span>Verified buyer</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSLETTER -->
-  <section class="newsletter-section">
-    <div class="newsletter-inner">
-      <p class="section-label centered">The Dispatch</p>
-      <h2 class="newsletter-headline">
-        Slow letters from <em>Vela.</em>
-      </h2>
-      <p class="newsletter-sub">Recipes, stories, and early access — no noise.</p>
-      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-        <input type="email" placeholder="Your email" class="newsletter-input" required />
-        <button type="submit" class="btn btn-dark">Subscribe</button>
+      <p class="waitlist-sub">Join the waitlist for early access — one thoughtful note per month, no noise.</p>
+      <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+        <input type="email" placeholder="your@email.com" class="waitlist-input" required />
+        <button type="submit" class="btn-dark-pill">Join Waitlist</button>
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-col">
-        <h5>Shop</h5>
-        <a href="#">The Original</a>
-        <a href="#">Bundles</a>
-        <a href="#">Gift cards</a>
-        <a href="#">Accessories</a>
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Shop</h5>
+          <a href="#">All shakers</a>
+          <a href="#">Accessories</a>
+          <a href="#">Refill program</a>
+          <a href="#">Gift cards</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#">Materials</a>
+          <a href="#">Impact report</a>
+          <a href="#">Journal</a>
+          <a href="#">Stockists</a>
+        </div>
+        <div class="footer-col">
+          <h5>Care</h5>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Lifetime warranty</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <a href="#">Instagram</a>
+          <a href="#">Are.na</a>
+          <a href="#">Spotify</a>
+          <a href="#">TikTok</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <a href="#">Our story</a>
-        <a href="#">Sustainability</a>
-        <a href="#">Press</a>
-        <a href="#">Careers</a>
+      <div class="footer-logo-big">
+        vela<span class="footer-dot">.</span>
       </div>
-      <div class="footer-col">
-        <h5>Content</h5>
-        <a href="#">Blog</a>
-        <a href="#">Recipes</a>
-        <a href="#">Instagram</a>
-        <a href="#">Ambassador</a>
+      <div class="footer-bottom">
+        <span>© 2026 Vela by terra-shake studio · Porto</span>
+        <span>Plastic-free since day one</span>
       </div>
-      <div class="footer-col">
-        <h5>Support</h5>
-        <a href="#">FAQ</a>
-        <a href="#">Shipping</a>
-        <a href="#">Returns</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <a href="#" class="footer-logo">vela.</a>
-      <p class="footer-legal">© 2026 Vela. All rights reserved. &nbsp;·&nbsp; Privacy &nbsp;·&nbsp; Terms</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function handleWaitlist(e) {
+      e.preventDefault();
+      const input = e.target.querySelector('input');
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'You\'re on the list ✓';
+      btn.disabled = true;
+      input.disabled = true;
+    }
+  </script>
 </body>
 </html>
