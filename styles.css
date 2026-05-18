@@ -48,7 +48,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .pill-beige  { background: var(--c-beige); color: var(--c-black); }
 .pill-white  { background: var(--c-bg); color: var(--c-black); }
 .pill-overlay{ background: rgba(247,245,242,0.15); color: var(--c-bg); }
-.pill-sm     { font-size: 11px; padding: 4px 14px; }
+.pill-sm     { font-size: 12px; padding: 8px 14px; }
 
 /* =============================================
    PROMO BANNER
@@ -133,12 +133,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 .hero-content {
   position: absolute;
-  bottom: 80px;
+  top: 50%;
   left: 80px;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 28px;
   max-width: 860px;
 }
 
@@ -270,9 +271,35 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   letter-spacing: 0.02em;
 }
 
+.btn-coming-soon {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background: var(--c-black);
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-bg);
+  opacity: 0.6;
+  cursor: default;
+}
+
 .coming-soon-light {
   background: rgba(247,245,242,0.25);
   color: var(--c-bg);
+}
+
+.btn-ritual {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background: #f3d4ba;
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-black);
 }
 
 .product-image {
@@ -666,7 +693,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .nav { padding: 0 20px; }
   .nav-left a:not(:first-child) { display: none; }
   .nav-right a:first-child { display: none; }
-  .hero-content { left: 24px; bottom: 40px; }
+  .hero-content { left: 24px; top: 50%; transform: translateY(-50%); }
   .problem-grid { grid-template-columns: 1fr; }
   .footer-cols { grid-template-columns: 1fr 1fr; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
