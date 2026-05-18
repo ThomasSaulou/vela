@@ -568,7 +568,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 .waitlist-headline {
   font-family: var(--f-serif);
-  font-size: clamp(28px, 3.5vw, 52px);
+  font-size: clamp(20px, 2.8vw, 40px);
   font-weight: 400;
   font-style: italic;
   letter-spacing: -0.02em;
