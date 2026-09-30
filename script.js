@@ -1,45 +1,36 @@
-// Scroll fade-in
+// Header: transparent over the hero, solid once scrolled (always solid with data-solid)
+const header = document.getElementById('siteHeader');
+const solidHeader = header.hasAttribute('data-solid');
+const onScroll = () => header.classList.toggle('is-scrolled', solidHeader || window.scrollY > 40);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+// Scroll reveal
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add('is-visible');
         observer.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.12 }
+  { threshold: 0.15 }
 );
 
-document.querySelectorAll(
-  '.product-intro, .why-card, .comparison-inner, .testimonial-card, .newsletter-inner, .recipes-content'
-).forEach((el) => {
-  el.classList.add('fade-in');
-  observer.observe(el);
-});
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-// Newsletter
-function handleNewsletter(e) {
-  e.preventDefault();
-  const input = e.target.querySelector('input');
-  const btn = e.target.querySelector('button');
-  btn.textContent = 'Subscribed ✓';
-  btn.style.background = '#7a9e7e';
-  btn.style.borderColor = '#7a9e7e';
-  input.value = '';
-  setTimeout(() => {
-    btn.textContent = 'Subscribe';
-    btn.style.background = '';
-    btn.style.borderColor = '';
-  }, 3000);
+// Product page: gallery counter (mobile carousel) + sticky CTA
+const gallery = document.getElementById('pdpGallery');
+if (gallery) {
+  const index = document.getElementById('pdpIndex');
+  gallery.addEventListener('scroll', () => {
+    index.textContent = Math.round(gallery.scrollLeft / gallery.clientWidth) + 1;
+  }, { passive: true });
+
+  const sticky = document.getElementById('pdpSticky');
+  const actions = document.querySelector('.pdp-actions');
+  new IntersectionObserver(([entry]) => {
+    sticky.classList.toggle('is-shown', !entry.isIntersecting && entry.boundingClientRect.top < 0);
+  }).observe(actions);
 }
-
-// Nav scroll opacity
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) {
-    nav.style.borderBottomColor = 'rgba(0,0,0,0.1)';
-  } else {
-    nav.style.borderBottomColor = 'rgba(0,0,0,0.06)';
-  }
-});

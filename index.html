@@ -4,255 +4,283 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vela — The Last Shaker You'll Ever Buy</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Vela — a surgical-grade steel shaker. Zero microplastics, natural cork, built for 25 years." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body id="top">
 
-  <!-- PROMO BANNER -->
-  <div class="promo-banner">
-    Free carbon-neutral shipping over €80 · Lifetime warranty
-  </div>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-left">
-      <a href="#top">Home</a>
-      <a href="#product">The Shaker</a>
+  <!-- HEADER (promo + nav) -->
+  <header class="site-header" id="siteHeader">
+    <div class="promo-banner">
+      Free carbon-neutral shipping over €80<span class="promo-extra"> &nbsp;·&nbsp; Lifetime warranty</span>
     </div>
-    <a href="#" class="nav-logo">VELA.</a>
-    <div class="nav-right">
-      <a href="#">Account</a>
-      <a href="#">Bag (0)</a>
-    </div>
-  </nav>
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="product.html">The Shaker</a>
+        <a href="#difference">Materials</a>
+        <a href="#ritual">The Ritual</a>
+      </div>
+      <a href="#top" class="nav-logo" aria-label="Vela — home">Vela</a>
+      <div class="nav-right">
+        <a href="#waitlist">Newsletter</a>
+        <a href="#">Account</a>
+        <a href="#">Bag (0)</a>
+      </div>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <section class="hero">
-    <img
-      src="assets/Section Marketing.png"
-      alt="Vela hero"
-      class="hero-img"
-    />
+    <img src="assets/Section Marketing.png" alt="Woman holding the Vela steel shaker after a yoga session" class="hero-img" />
+    <div class="hero-shade"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Coming Soon</p>
+      <p class="eyebrow eyebrow-light">Coming soon · The Vela Original</p>
       <h1 class="hero-headline">
         Shake the future,<br />
         <em>not the planet.</em>
       </h1>
-      <a href="#waitlist" class="btn-hero">Stay updated</a>
+      <a href="product.html" class="link-arrow link-arrow-light">Discover the shaker <span aria-hidden="true">→</span></a>
     </div>
+    <span class="hero-scroll" aria-hidden="true">Scroll</span>
   </section>
 
-  <!-- PRODUCT SECTION -->
-  <section class="product-section" id="product">
-    <div class="product-header">
-      <div class="pill pill-beige">The Vela Original</div>
-      <h2 class="product-headline">
-        Engineered to be<br />
-        the <em class="accent">last shaker</em> you'll ever<br />
-        buy.
-      </h2>
+  <!-- INTRO STATEMENT -->
+  <section class="intro">
+    <p class="eyebrow">The Vela Philosophy</p>
+    <p class="intro-text reveal">
+      A shaker reduced to what matters: surgical-grade steel, a natural cork seal,
+      and <em>nothing that ends up in your drink.</em> Designed for the quiet
+      discipline of every day — the mat, the gym, the slow morning.
+    </p>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Zero microplastics</span><i>·</i>
+      <span>316L surgical steel</span><i>·</i>
+      <span>Natural cork seal</span><i>·</i>
+      <span>BPA-free, forever</span><i>·</i>
+      <span>Made in Europe</span><i>·</i>
+      <span>Lifetime warranty</span><i>·</i>
+      <span>Zero microplastics</span><i>·</i>
+      <span>316L surgical steel</span><i>·</i>
+      <span>Natural cork seal</span><i>·</i>
+      <span>BPA-free, forever</span><i>·</i>
+      <span>Made in Europe</span><i>·</i>
+      <span>Lifetime warranty</span><i>·</i>
     </div>
-    <div class="product-body">
-      <div class="product-info">
-        <div class="product-name-row">
-          <span class="product-name">The Vela Original</span>
-        </div>
-        <p class="product-desc">
-          Three honest materials. Zero microplastics. Independently
-          lab-tested at 90°C — because what you drink shouldn't
-          include what holds it.
-        </p>
-        <div class="product-stats">
-          <div class="stat">
-            <span class="stat-value">316L</span>
-            <span class="stat-label">STEEL</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">25y</span>
-            <span class="stat-label">LIFESPAN</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">0g</span>
-            <span class="stat-label">PLASTIC</span>
-          </div>
-        </div>
-        <div class="product-cta-row">
-          <span class="btn-coming-soon">Coming Soon</span>
-        </div>
-      </div>
-      <div class="product-image">
-        <img
-          src="assets/ChatGPT Image Apr 30, 2026, 03_59_16 PM 1.png"
-          alt="Vela Original Shaker"
-        />
-      </div>
-      <div class="product-badges">
-        <div class="feature-badge">
-          <img src="assets/Container.png" alt="Plastic-free" />
+  </div>
+
+  <!-- PRODUCT -->
+  <section class="product" id="product">
+    <div class="product-stage">
+      <span class="product-bigtype" aria-hidden="true">316L</span>
+      <img src="assets/ChatGPT Image Apr 30, 2026, 03_59_16 PM 1.png" alt="The Vela Original stainless steel shaker" class="product-img" />
+      <span class="product-caption">Brushed stainless steel · 316L</span>
+    </div>
+
+    <div class="product-details">
+      <p class="eyebrow">The Vela Original</p>
+      <h2 class="section-title">
+        Engineered to be the <em>last shaker</em> you'll ever buy.
+      </h2>
+      <p class="body-text">
+        Three honest materials. Zero microplastics. Independently lab-tested
+        at 90°C — because what you drink shouldn't include what holds it.
+      </p>
+
+      <dl class="stats">
+        <div><dt>316L</dt><dd>Steel</dd></div>
+        <div><dt>25y</dt><dd>Lifespan</dd></div>
+        <div><dt>0g</dt><dd>Plastic</dd></div>
+      </dl>
+
+      <span class="btn-solid is-disabled">Coming soon</span>
+      <a href="product.html" class="link-arrow">View details <span aria-hidden="true">→</span></a>
+
+      <div class="key-features">
+        <div class="key-feature">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15Z"/><path d="M16 12v16"/></svg>
           <span>Plastic-free</span>
         </div>
-        <div class="feature-badge">
-          <img src="assets/Container-1.png" alt="Durable" />
+        <div class="key-feature">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 26 8v8c0 6-4 10-10 12C10 26 6 22 6 16V8l10-4Z"/><path d="m11.5 16 3 3 6-6"/></svg>
           <span>Durable</span>
         </div>
-        <div class="feature-badge">
-          <img src="assets/Group_1.png" alt="BPA-free" />
+        <div class="key-feature">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="m8.5 8.5 15 15"/></svg>
           <span>BPA-free</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- PROBLEM SECTION -->
-  <section class="problem-section">
-    <div class="problem-inner">
-      <div class="pill pill-white">The Problem</div>
-      <h2 class="problem-headline">
-        "Common" plastic shakers leach <em class="accent">microparticles</em><br />
-        into every workout.
-      </h2>
-      <div class="problem-grid">
-        <div class="problem-item">
-          <span class="problem-num">01</span>
-          <h4>Microplastics</h4>
-          <p>Plastic bottles release thousands of micro-particles per shake into your drink.</p>
-        </div>
-        <div class="problem-item">
-          <span class="problem-num">02</span>
-          <h4>Trapped odours</h4>
-          <p>Porous plastic walls absorb protein residue — the smell never quite leaves.</p>
-        </div>
-        <div class="problem-item">
-          <span class="problem-num">03</span>
-          <h4>Short lifespan</h4>
-          <p>Most plastic shakers are landfill within 18 months. Vela is built for 25 years.</p>
-        </div>
+      <div class="accordion">
+        <details open>
+          <summary>Materials</summary>
+          <ul>
+            <li><span>Body</span><span>316L surgical-grade steel</span></li>
+            <li><span>Seal</span><span>Natural cork</span></li>
+            <li><span>Plastic</span><span>None</span></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Testing</summary>
+          <p>Independently lab-tested at 90°C for migration of particles into liquids.</p>
+        </details>
+        <details>
+          <summary>Warranty &amp; shipping</summary>
+          <p>Lifetime warranty. Carbon-neutral shipping, free over €80.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- COMPARISON TABLE -->
-  <section class="comparison-section">
-    <div class="comparison-inner">
-      <div class="pill pill-beige">The Difference</div>
-      <h2 class="comparison-headline">
-        Vela vs. <em class="muted">the other shakers.</em>
+  <!-- PROBLEM (editorial split) -->
+  <section class="split split-problem">
+    <div class="split-media">
+      <img src="assets/Pouring water into the shaker.png" alt="Plastic shaker bottle being opened" loading="lazy" />
+    </div>
+    <div class="split-text reveal">
+      <p class="eyebrow">The Problem</p>
+      <h2 class="section-title">
+        “Common” plastic shakers leach <em>microparticles</em> into every workout.
       </h2>
-      <div class="comparison-table-wrap">
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th class="col-feature"></th>
-              <th class="col-vela">Vela</th>
-              <th class="col-others">Plastic shakers</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Zero microplastics</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-            <tr>
-              <td>BPA-free, forever</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-            <tr>
-              <td>Surgical-grade 316L steel</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-            <tr>
-              <td>Natural cork seal</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-            <tr>
-              <td>Lifetime warranty</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-            <tr>
-              <td>Carbon-neutral shipping</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-            <tr>
-              <td>Made in Europe</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-            <tr>
-              <td>Recyclable in one stream</td>
-              <td class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 5" stroke="#bc6b4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
-              <td class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8H12" stroke="#c4bdb8" stroke-width="1.5" stroke-linecap="round"/></svg></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ol class="numbered">
+        <li>
+          <span class="num">01</span>
+          <div>
+            <h3>Microplastics</h3>
+            <p>Plastic bottles release thousands of micro-particles per shake into your drink.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <div>
+            <h3>Trapped odours</h3>
+            <p>Porous plastic walls absorb protein residue — the smell never quite leaves.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <div>
+            <h3>Short lifespan</h3>
+            <p>Most plastic shakers are landfill within 18 months. Vela is built for 25 years.</p>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- RECIPES / RITUAL SECTION -->
-  <section class="ritual-section">
-    <div class="ritual-img-wrap">
-      <img
-        src="assets/684e9c93-e46c-40f5-877a-5f025615ecfc_1.png"
-        alt="Person holding Vela shaker"
-        class="ritual-img"
-      />
+  <!-- COMPARISON -->
+  <section class="comparison" id="difference">
+    <div class="comparison-inner reveal">
+      <p class="eyebrow">The Difference</p>
+      <h2 class="section-title center">Vela <em>vs. the other shakers.</em></h2>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th scope="col"><span class="sr-only">Feature</span></th>
+            <th scope="col" class="col-vela">Vela</th>
+            <th scope="col">Plastic shakers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Zero microplastics</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+          <tr><th scope="row">BPA-free, forever</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+          <tr><th scope="row">Surgical-grade 316L steel</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+          <tr><th scope="row">Natural cork seal</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+          <tr><th scope="row">Lifetime warranty</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+          <tr><th scope="row">Carbon-neutral shipping</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+          <tr><th scope="row">Made in Europe</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+          <tr><th scope="row">Recyclable in one stream</th><td class="col-vela yes">●</td><td class="no">—</td></tr>
+        </tbody>
+      </table>
     </div>
+  </section>
+
+  <!-- RITUAL (full-bleed) -->
+  <section class="ritual" id="ritual">
+    <img src="assets/684e9c93-e46c-40f5-877a-5f025615ecfc_1.png" alt="Man holding the Vela shaker in soft morning light" class="ritual-img" loading="lazy" />
     <div class="ritual-content">
-      <div class="pill pill-overlay">The Ritual</div>
-      <h2 class="ritual-headline">Explore our recipes</h2>
-      <p class="ritual-sub">
-        Cool steel in your palm. The soft pop of cork. A slow pour. We
-        designed every gesture — because how you start your day is
-        how you spend it.
-      </p>
-      <span class="btn-ritual">Coming Soon</span>
+      <div class="ritual-inner reveal">
+        <p class="eyebrow">The Ritual</p>
+        <h2 class="section-title">Explore our <em>recipes.</em></h2>
+        <p class="body-text">
+          Cool steel in your palm. The soft pop of cork. A slow pour. We designed
+          every gesture — because how you start your day is how you spend it.
+        </p>
+        <span class="link-arrow is-disabled">Coming soon</span>
+      </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER / WAITLIST -->
-  <section class="waitlist-section" id="waitlist">
-    <div class="waitlist-inner">
-      <div class="pill pill-beige">The Dispatch</div>
-      <h2 class="waitlist-headline">
-        <em class="accent">Vela.'s newsletter</em> is coming soon
-      </h2>
-      <p class="waitlist-sub">One thoughtful note per month — new editions, material studies, no noise.</p>
+  <!-- QUOTE -->
+  <section class="quote">
+    <blockquote class="reveal">
+      « Strength is quiet. <em>So is good design.</em> »
+    </blockquote>
+    <p class="eyebrow">Vela Studio, Porto</p>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="waitlist" id="waitlist">
+    <div class="waitlist-inner reveal">
+      <p class="eyebrow">The Dispatch</p>
+      <h2 class="section-title center">Vela's newsletter is <em>coming soon.</em></h2>
+      <p class="body-text center">One thoughtful note per month — new editions, material studies, no noise.</p>
+    </div>
+  </section>
+
+  <!-- TRUST BAND -->
+  <section class="trust">
+    <div class="trust-item">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 16c0-3 2-5 4.5-5S16 13 16 16s1 5 3.5 5S24 19 24 16s-2-5-4.5-5S16 13 16 16s-1 5-3.5 5S8 19 8 16Z"/></svg>
+      <h3>Lifetime warranty</h3>
+      <p>Built once, built to last. We stand behind every shaker, forever.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15Z"/><path d="M16 12v16"/></svg>
+      <h3>Carbon-neutral shipping</h3>
+      <p>Every order offset. Free delivery over €80.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c3 3 4.5 7 4.5 11S19 24 16 27c-3-3-4.5-7-4.5-11S13 8 16 5Z"/></svg>
+      <h3>Made in Europe</h3>
+      <p>Designed in Porto, produced close to home.</p>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo-big">
-        vela<span class="footer-dot">.</span>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Vela</h4>
+        <a href="product.html">The Shaker</a>
+        <a href="#difference">Materials</a>
+        <a href="#ritual">The Ritual</a>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Vela by terra-shake studio · Porto</span>
+      <div class="footer-col">
+        <h4>Care</h4>
+        <a href="#">Lifetime warranty</a>
+        <a href="#">Shipping</a>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <span>Porto, Portugal</span>
         <span>Plastic-free since day one</span>
       </div>
+    </div>
+    <div class="footer-wordmark" aria-hidden="true">VELA</div>
+    <div class="footer-bottom">
+      <span>© 2026 Vela by terra-shake studio · Porto</span>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    function handleWaitlist(e) {
-      e.preventDefault();
-      const input = e.target.querySelector('input');
-      const btn = e.target.querySelector('button');
-      btn.textContent = 'You\'re on the list ✓';
-      btn.disabled = true;
-      input.disabled = true;
-    }
-  </script>
 </body>
 </html>
